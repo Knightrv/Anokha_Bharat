@@ -1,0 +1,329 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.offset:before{
+    height: 4rem;
+    margin-top: -4rem;
+    content="";
+    display: block;
+}
+
+.navbar{
+    position: fixed;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    height: auto;
+    letter-spacing: .1rem;
+    background: rgba(5,198,163,.6)!important
+}
+
+.navbar img{
+    height: 5rem;
+    width: 5rem;
+}
+#nav-head{
+    width: 60%;
+    height: 35%;
+    display: inline-block;
+    font-size:3rem;
+}
+.heading-text{
+    text-align: center;
+    position: absolute;
+    right: 40%;
+    left: 70%;
+    color: cornsilk;
+    line-height: 65px;
+}
+.navbar-nav li {
+    padding-right: .7rem;
+    color: darkblue;
+    text-align: right;
+}
+.navbar-dark .navbar-nav .navbar-link {
+    color: white;
+    padding-top: .4rem;
+    padding-bottom: 4rem;
+}
+
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color:white;
+}
+.nav-link{
+    color: white !important;
+}
+.nav-link:hover{
+    color: blue !important;
+}
+.admin-wrapper{
+    display: flex;
+    height: 100vh;
+}
+
+.admin-sidebar{
+    flex: 2;
+    background-color: #234a57;
+    height: 100vh;
+    position: fixed;
+}
+.main-nav{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-align: center;
+}
+.admin-sidebar i{
+    font-size: 20px;
+}
+.main-nav li a{
+    padding: 5px;
+    display: block;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: aliceblue;
+    border-bottom: 1px solid darkgreen;
+}
+.main-nav ul a{
+    color: red;
+}
+.main-nav li:hover{
+    background-color: aqua;
+    
+}
+
+.main-nav li a:hover{
+    color: darkblue;
+}
+.main-nav ul{
+    display: none;
+}
+.main-nav li: hover{
+    color: red;
+}
+.main-nav li:hover ul{
+    display: block;
+    color: darkblue;
+}
+
+.main-nav ul li:hover{
+    color: darkblue;
+}
+.admin-content{
+    flex: 8;
+    padding: 40px 100px 100px;
+    overflow-y: scroll;
+}
+
+.admin-content .page-title{
+    text-align:center;
+    margin-bottom: 1.5rem;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+}
+
+th,td{
+    padding:15px;
+    text-align: left;
+    border-bottom: 1px solid wheat;
+}
+
+table a{
+    text-decoration: none;
+}
+.confirm{
+    color: darkgreen;
+}
+.delete{
+    color: red;
+}
+
+.confirm:hover,
+.delete:hover{
+    text-decoration: underline;
+}
+tbody tr:hover{
+    background-color:bisque;
+}
+
+
+.boxes{
+    margin-right: 26px;
+    margin-left: 26px;
+    margin-bottom: 24px;
+    padding-top: 56px;
+}
+.boxes i{
+    margin-top: 4px;
+    font-size: 32px;
+}
+
+
+#user{
+    background-color: orangered;
+    text-align: center;
+    color: white;
+}
+
+#package{
+    background-color: darkblue;
+    text-align: center;
+    color: white;
+}
+
+#booking{
+    background-color: darkgoldenrod;
+    text-align: center;
+    color: white;
+}
+#enquiry{
+    background-color: darkgreen;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (min-width:1231px){
+    .nav-link{
+        font-size: 1rem;
+    }
+    .admin-sidebar{
+        flex=2;
+    }
+    .admin-content{
+        flex=8;
+    }
+}
+@media screen and (max-width:1230px){
+    #nav-head{
+        font-size: 99%;
+    }
+    .admin-sidebar{
+        flex=1 !important;
+    }
+    .admin-content{
+        flex=9 !important;
+    }
+}
+.create_package{
+    position: absolute;
+    top: 12%;
+    left: 30%;
+    width: 40%;
+    height: 60%;
+    padding: 40px 40px;
+}
+#add_pkg:before{
+    /*background-image: url("../img/addpackage.jpg");*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    -webkit-filter:blur(10px);
+    -moz-filter:blur(10px);
+}
+.pcg-btn{
+    margin-bottom: 32px;
+    color: white;
+    padding:4px;
+    background-image: linear-gradient(to right,red 0%,orange 100%);    
+}
+
+.pcg-btn:hover{
+    background-image: linear-gradient(to right,orange 0%,red 100%);
+}
+
+#adminlog{
+    background: url(../../img/adminlog.jpg) no-repeat top center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.loginbox{
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    width: 55%;
+    height: 80%;
+}
+#admin_form{
+    background: rgba(0,0,0,0.6);
+    margin-top: 15px;
+    align-items: center;
+    align-self: center;
+    height: 70%;
+
+}
+#admin_form p{
+    color: white;
+    margin-top: 8px;
+    position: relative;
+    left: 20%;
+}
+.loginbox h1{
+    color: aqua;
+    text-align: center;
+}
+#admin_form input{
+    width: 50%;
+    position: relative;
+    left: 20%;
+}
+
+.btn_admin{
+    background-color: orange;
+    border-radius: 0.5rem;
+}
+
+.btn_admin:hover{
+    background-color: lightgreen;
+}
+
+.enquiry h1{
+    text-align: center;
+}
+#username_enq{
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+#sub_enq{
+    margin-top: 40px;
+    margin-left: 150px;
+}
+
+#message_enq{
+    margin-top: 50px;
+    box-shadow: 10px 10px grey;
+    background-color: bisque;
+    border: 1px solid red;
+    margin-left: 100px;
+    width: 40%;
+    height: 40%;
+}
+#message_enq h4{
+    text-align: center;
+    color: blue;
+    margin-bottom: 20px;
+}
+#mesage_enq p{
+    text-align: center;
+    
+}

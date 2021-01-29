@@ -1,0 +1,23 @@
+<?php
+    session_start();
+    error_reporting(0);
+    require_once "pdo.php";
+    unset($SESSION['place']);
+    unset($_SESSION['image_url']);
+    unset($_SESSION['image_name']);
+    unset($_SESSION['t_mail']);
+    unset($_SESSION['name']);
+    unset($_SESSION['persons']);
+    unset($_SESSION['to_date']);
+    unset($_SESSION['from_date']);
+    unset($_SESSION['pid']);
+    //$obj=json_decode(trim($_POST['u_data']),true);
+    //var_dump($obj);
+    $_SESSION['trmail']=$_POST['trmail'];
+    $_SESSION['trname']=$_POST['trname'];
+    $_SESSION['persons']=$_POST['persons'];
+    $_SESSION['to_date']=$_POST['to_date'];
+    $_SESSION['from_date']=$_POST['from_date'];
+    $_SESSION['pid']=$_POST['package_name'];
+    var_dump(array($_SESSION['trmail'],$_SESSION['trname'],$_SESSION['persons'],$_SESSION['to_date'],$_SESSION['from_date'],$_SESSION['pid']));
+?>

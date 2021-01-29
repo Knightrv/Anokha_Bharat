@@ -1,0 +1,39 @@
+.offset:before{
+    height: 4rem;
+    margin-top: -4rem;
+    content="";
+    display: block;
+}
+
+.navbar{
+    position: fixed;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(111,45,99,.6)!important
+}
+
+.navbar img{
+    height: 100px;
+    width: 100px;
+}
+/*.navbar-brand{
+    height: 32px;
+}
+*/
+.navbar h1{
+    text-align: center;
+}
+.navbar-nav li {
+    padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .navbar-link {
+    color: white;
+    padding-top: .4rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: lightgreen;
+}

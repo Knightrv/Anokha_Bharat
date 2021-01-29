@@ -1,0 +1,714 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    overflow-x: hidden;
+    color: slategray;
+}
+/*---Navbar ------*/
+.offset:before{
+    height: 4rem;
+    margin-top: -4rem;
+    content="";
+    display: block;
+}
+
+.navbar{
+    position: fixed;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(0,0,0,.6)!important
+}
+
+.navbar img{
+    height: 100px;
+    width: 100px;
+}
+/*.navbar-brand{
+    height: 32px;
+}
+*/
+
+.navbar-nav li {
+    padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .navbar-link {
+    color: white;
+    padding-top: .4rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: lightgreen;
+}
+
+/*---Slider ---*/
+
+.carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 48%;
+    text-transform: uppercase
+}
+
+.carousel-caption h1{
+    font-size:60px;
+    font-weight: 700;
+    letter-spacing: .3rem;    
+}
+.carousel-caption h3{
+    text-shadow: .1rem,.1rem,.5rem black;
+    padding:1.5rem; 
+}
+.btn-lg{
+    border-width: medium;
+    font-size: 1.1rem;
+}
+
+.jumbotron{
+    border-radius:0;
+    padding: 3rem 5rem 2rem 5rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+$packages{
+    padding-top: 6rem;
+}
+
+.features{
+    width: 100%;
+    max-width: 100%;
+    padding: 5rem;
+    margin-top: 8rem;
+    margin-bottom:3rem;
+    background-color: azure;
+    box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    border-radius: .8rem;
+    align-self: center;
+}
+
+.feature-img{
+    min-width: 35rem;
+    max-width: 35rem;
+    height: 30rem;
+    transform: translateX(-4rem);
+    position: relative;
+}
+
+
+
+.feature-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: .8rem;
+}
+
+.feature-img::before{
+    content='';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: .5rem .5rem 3rem 1px rgba(0,0,0,.05);
+    border-radius: .8rem;    
+}
+
+.feature-cost span{
+    display: block;
+    color: rgba(0,0,0,.5);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: .5rem;
+}
+
+
+.feature-title{
+    font-size: 2.5rem;
+    margin: 1.5rem 0 2rem;
+    text-transform: uppercase;
+    color: blue;
+}
+
+.feature-text{
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    color: rgba(0,0,0,.7);
+    text-overflow: ellipsis;
+}
+
+.feature-buttons{
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: white;
+    background-image: linear-gradient(to right,#4facfe 0%,#00f2fe 100%);
+    border-radius: .8rem;
+    text-decoration: none;
+}
+
+.feature-buttons:hover{
+    background-image: linear-gradient(to right,#00f2fe 0%,#4facfe 100%);
+}
+
+.col-md-5{
+    text-align: center;
+    align-self: center;
+    margin-right: 32px;
+    margin-left: 32px;
+}
+
+.col-md-5 h4{
+    font-weight: 600;
+    color: black;
+}
+.col-md-5 img{
+    padding-top: 10px;
+}
+#ideology{
+    color: black;
+}
+.quotes{
+    font-style: italic;
+    color: maroon;
+}
+#details{
+    color: black;
+}
+#mail{
+    color: blue;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.lead{
+    color: black;
+    text-align: center;
+    font-weight: 300;
+}
+
+/*****************Andhra Pradesh----------------------*/
+#backend{
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#placehead{
+    position: absolute;
+    color: white;
+    top: 36%;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .3rem;
+}
+
+#name{
+    position:absolute;
+    top: 54%;
+    color: white;
+    left: 80%;
+}
+
+#content h1{
+    text-align: center;
+    color: darkgreen;
+    text-shadow: 2px,2px,lightgreen;
+    text-transform: uppercase;
+    padding-bottom: 4rem;
+    padding-top: 3rem;
+}
+
+#content h3{
+    color: blue;
+}
+#content{
+    color: black;
+    font-size: 18px;
+}
+#tourism h1{
+    padding-bottom: 2rem;
+}
+#tourism p{
+    text-align: center;
+}
+.Off-beat ul{
+    display: none;
+}
+/*******************************/
+@media screen and (max-width:1068px){
+    .features{
+        max-width: 180rem;
+    }
+    .feature-img{
+        min-width: 30rem;
+        max-width: 30rem;
+    }
+}
+
+@media screen and (max-width:968px){
+    .features{
+        max-width: 70rem;
+    }
+    .feature-img{
+        min-width: 17rem;
+        max-width: 30rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    .features{
+        padding:2.5rem;
+        flex-direction: column;
+    }
+    .feature-img{
+        min-width: 100%;
+        max-width: 100%;
+        transform:translate(0,-4rem);
+    }
+}
+
+#first{
+    background-color: rgb(0,0,0,0);
+    margin-top: 0;
+}
+#heading_first{
+    text-align:center;
+    color:crimson;
+    font-weight: 600;
+    margin:auto;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+/*******************userpage**********************/
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  width:80%;
+    text-align: center;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  position: absolute;
+    left: 8%;
+    top:40%;
+}
+
+.content-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: center;
+    align-self: center;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+
+/************************Login box****************************/
+.loginbox{
+    width: 320px;
+    height: 560px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding:70px 30px;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.loginbox h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"],input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.loginbox input[type="submit"]{
+    border:none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+    margin-bottom: 5px;
+}
+
+.loginbox a:hover{
+    color: #ffc107;
+}
+
+.copyright{
+    text-align: center;
+    margin-left: 30%;
+}
+.card{
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    border: 2px solid blue;
+}
+.form-control{
+    border-color: aqua;
+    border-width: thin;
+}
+hr{
+    border: solid 1px black;
+    width: 96%;
+    color: black;
+    height: 1px;
+}
+
+.input{
+    align-content: center;
+}
+
+.input h1{
+    color: maroon;
+    text-align: center;
+}
+
+#book_body{
+    background: url("../img/back_book.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.form_control{
+  position: absolute;
+  top: 55%;
+  left: 55%;
+  transform: translate(-50%,-50%);
+  width: 86%;
+  height:100%;
+}
+
+.checkout_wrapper{
+  width: 80%;
+  height: 88%;
+  display: flex;
+}
+
+.checkout_wrapper .product_info{
+  width: 45%;
+  background: lightgreen;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: relative;
+}
+
+.checkout_wrapper .product_info img{
+  width: 98%;
+  height: 75%;
+  margin-top: 30px;
+  margin-left: 5px;
+}
+
+.checkout_wrapper .checkout_form{
+  width: 55%;
+  background: #fff;
+  padding: 50px 30px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.checkout_wrapper .product_info .content{
+  text-align: center;
+  margin-top: 25px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.checkout_wrapper .product_info .content h3{
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 3px;
+}
+
+.checkout_wrapper .product_info .content p{
+  margin-top: 10px;
+  font-size:14px;
+}
+
+.checkout_form p{
+  margin-bottom: 25px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.checkout_form .details .section{
+  margin-bottom: 15px;
+}
+
+.checkout_form .details .section input{
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #dddddd;
+}
+
+.checkout_form .details .section input:focus{
+  border: 2px solid #e85c4d;
+}
+
+.checkout_form .details .section.last_section{
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout_form .details .section.last_section .item{
+  width: 45%;
+}
+
+.checkout_form .details .btn_checkout{
+  background: #e85c4d;
+  padding: 10px;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.checkout_form .details .btn_checkout a{
+  color: #fff;
+  letter-spacing: 5px;
+  display: block;
+}
+
+
+#payment{
+  background: url("../img/payment.jpg") no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  font-size: 16px;
+}
+
+#debit{
+  width: 100%;
+  padding: 10px;
+}
+
+#debit .container{
+  max-width: 500px;
+  height: auto;
+  margin: 0px auto;
+  background: #fff;
+  padding: 20px 40px 30px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: 7px solid #5f6c7d;
+}
+
+.payment_title{
+  color: #5f6c7d;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.debit_input-form{
+  margin-bottom: 20px;
+}
+
+.debit_input-form .debit_label{
+	  display: block;
+    font-size: 1em;
+    color: #212121;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+
+.debit_input-form .debit_items{
+  margin-bottom: 20px;
+}
+
+.debit_section-1 .debit_items .debit_input,
+.debit_section-2 .debit_items .debit_input,
+.debit_section-3 .debit_items .debit_input{
+    background: transparent;
+    border: 2px solid #BDBDBD;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: #212121;
+    border-radius: 3px;
+}
+
+.debit_input-form .debit_section-3{
+  display: flex;
+  justify-content: space-between;
+}
+
+.debit_input-form .debit_section-3 .debit_items{
+   width: 48%;
+}
+
+.debit_btn{
+	background: #5f6c7d;
+	color: #fff;
+	font-size: 1.25em;	
+	padding: 10px 0;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.debit_btn:hover{
+    background: linear-gradient(to right, red 100%,black 0);
+
+}
+
+.cvc{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+
+
+@media screen and (max-width: 460px){
+  .debit_input-form .debit_section-3{
+    flex-direction: column;
+  }
+  .debit_input-form .debit_section-3 .debit_items{
+     width: 100%;
+  }
+  .debit_input-form .debit_items{
+    margin-bottom: 10px;
+  }
+
+  .debit_input-form{
+    margin-bottom: 15px;
+  }
+  .payment_title{
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+}
+
+.user_feedback{
+    padding: 100px 0;
+    margin-top: 10px;
+}
+
+.user_feedback h1{
+    text-align: center;
+    color:darkgreen;
+    margin-bottom: 85px;
+    margin-top: 10px;
+}
+.user_review{
+    text-align:center;
+    box-shadow: 0 0 10px 0 rgba(0,0,100,0.2);
+    padding-bottom: 50px;
+}
+
+
+.user_review p{
+    padding: 50px 10px 10px 10px;
+}
+
+.user_feedback img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    margin: -30px 0 20px 40%;
+}
+
+.user_review::before{
+    content:'\201d';
+    display: block;
+    position: absolute;
+    font-size: 100px;
+    color: #6495ed;
+    font-family: sans-serif;
+    left: 44%;
+    top: -20%;
+}
